@@ -1,0 +1,80 @@
+.contact {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    @media (min-width: $bp-desktop) {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+.contact__title {
+    margin-bottom: 30px;
+
+    @media (min-width: $bp-tablet) {
+        margin-bottom: 40px;
+    }
+}
+
+.contact__wrapper {
+
+    @include flex(column, center, center, 30px);
+
+    @media (min-width: $bp-desktop) {
+        max-width: 580px;
+        @include flex(column, center, flex-start, 30px);
+        grid-column: 2;
+    }
+}
+
+.contact__heading {
+    color: $primary-black;
+    text-align: center;
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    text-transform: uppercase;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 56px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 46px;
+        text-align: unset;
+    }
+}
+
+.contact__paragraph {
+    color: $primary-black;
+    text-align: center;
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 24px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 33px;
+        text-align: unset;
+    }
+}
+
+.btn-secondary.contact__btn {
+    padding: 10px 82px 10px 59px;
+
+    &::after {
+        right: 46px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        padding: 15px 49px 15px 30px;
+
+        &::after {
+            right: 14px;
+        }
+    }
+}

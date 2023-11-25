@@ -1,0 +1,200 @@
+.dianne-russell {
+    padding-top: 85px;
+    color: $primary-black;
+    text-align: center;
+
+    @media(min-width: $bp-tablet) {
+        padding-top: 171px;
+    }
+}
+
+.dianne-russell__title {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 34px;
+    text-transform: uppercase;
+
+    @media (min-width: $bp-xs) {
+        font-size: 54px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 87px;
+    }
+
+    @media (min-width: $bp-middle) {
+        font-size: 112px;
+    }
+}
+
+.dianne-russell__subtitle {
+    font-family: 'Gilroy';
+    font-size: 34px;
+    font-weight: 300;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 84px;
+
+    @media (min-width: $bp-xs) {
+        font-size: 54px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 87px;
+        margin-bottom: 110px;
+    }
+
+    @media (min-width: $bp-middle) {
+        font-size: 112px;
+        margin-bottom: 121px;
+    }
+
+    &::after {
+        content: url(../../img/svg/arrow-down.svg);
+        position: absolute;
+        right: 50%;
+        top: 60px;
+
+        @media (max-width: $bp-xs) {
+            top: 40px;
+        }
+
+        @media (min-width: $bp-middle) {
+            top: 90px;
+        }
+    }
+}
+
+.dianne-russell__image {
+    width: 100%;
+    aspect-ratio: .75;
+    min-width: 320px;
+    object-fit: cover;
+
+    @media(min-width: $bp-tablet) {
+        aspect-ratio: 1.04;
+    }
+
+    @media (min-width: $bp-desktop) {
+        aspect-ratio: 2;
+    }
+}
+
+.dianne-russell__description-container {
+    min-width: 320px;
+    position: relative;
+
+    @media (min-width: $bp-desktop) {
+        padding: 50px 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.dianne-russell__description {
+    padding: 20px;
+    color: $primary-black;
+    text-align: center;
+    font-family: 'Gilroy';
+    font-size: 19px;
+    font-weight: 300;
+
+    & span {
+        font-weight: 800;
+    }
+
+    @media(min-width: $bp-xs) {
+        font-size: 22px;
+    }
+
+    @media(min-width: $bp-tablet) {
+        font-size: 39px;
+        padding: 30px;
+    }
+
+    @media(min-width: $bp-middle) {
+        font-size: 42px;
+    }
+
+    @media (min-width: $bp-desktop) {
+
+        text-align: justify;
+        padding: 0;
+        max-width: 65%;
+    }
+}
+
+.dianne-russell__social-media-container {
+    padding: 20px;
+    background: $primary-black;
+
+    @include flex(column, center, flex-end, 15px);
+
+    @media (min-width: $bp-tablet) {
+        gap: 25px;
+        padding: 30px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        padding-left: 100px;
+        padding-right: 70px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -70px;
+    }
+}
+
+.dianne-russell__about-me {
+    color: $white;
+    font-family: 'Gilroy-Medium';
+    font-size: 23px;
+    line-height: 23px;
+    text-transform: uppercase;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+.dianne-russell__social-media {
+    @include flex(row, center, center, 20px);
+}
+
+.dianne-russell__logo-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include flex(row, center, center, 20px);
+    flex-wrap: wrap;
+
+    @media (min-width: $bp-tablet) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        gap: 10px;
+        flex-wrap: nowrap;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+.btn-primary.dianne-russell__logo-chips {
+    max-width: 130px;
+
+    @media(min-width: $bp-xs) {
+        padding: 15px 25px;
+        max-width: 143px;
+
+    }
+
+    @media (min-width: $bp-tablet) {
+        max-width: 177px;
+    }
+}

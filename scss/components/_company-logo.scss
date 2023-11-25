@@ -1,0 +1,40 @@
+.company-logo__tablet {
+    display: none;
+
+    @media(min-width: $bp-tablet) {
+        @include flex(row, center, center, 6px);
+    }
+}
+
+.company-logo {
+    color: $black;
+    font-size: 35px;
+    letter-spacing: -0.7px;
+   
+    @include flex(row, center, center, 10px);
+
+    & svg {
+        width: 91px;
+        height: 35px;
+    }
+}
+
+.company-logo__first-name {
+    font-family: 'Gilroy';
+    font-weight: 800;
+}
+
+.company-logo__studio-name {
+    display: block;
+    font-family: "Gilroy-Medium";
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 21px;
+
+    &::after {
+        content: url(../../img/svg/trade-mark.svg);
+        position: absolute;
+        top: -12px;
+        right: 0;
+    }
+}

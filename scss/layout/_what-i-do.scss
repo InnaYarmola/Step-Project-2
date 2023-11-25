@@ -1,0 +1,335 @@
+.what-i-do {
+    min-height: 1148px;
+    background-image: url(../../img/what-i-do/grey-tel.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @include flex(row, center, flex-end);
+
+    @media(min-width: 350px) {
+        min-height: 1115px;
+    }
+
+    @media(min-width: 420px) {
+        min-height: 1130px;
+    }
+
+    @media(min-width: 440px) {
+        min-height: 1150px;
+    }
+
+    @media(min-width: 450px) {
+        min-height: 1151px;
+    }
+
+    @media(min-width: 460px) {
+        min-height: 1165px;
+    }
+
+    @media(min-width: 480px) {
+        min-height: 1185px;
+    }
+
+    @media(min-width: $bp-xs) {
+        min-height: 1212px;
+    }
+
+    @media(min-width: 520px) {
+        min-height: 1242px;
+    }
+
+    @media(min-width: 538px) {
+        min-height: 1243px;
+    }
+
+    @media(min-width: 560px) {
+        min-height: 1275px;
+    }
+
+    @media(min-width: 590px) {
+        min-height: 1294px;
+    }
+
+    @media(min-width: 600px) {
+        min-height: 1258px;
+    }
+
+    @media(min-width: 609px) {
+        min-height: 1254px;
+    }
+
+    @media(min-width: 636px) {
+        min-height: 1284px;
+    }
+
+    @media(min-width: 665px) {
+        min-height: 1310px;
+    }
+
+    @media(min-width: 700px) {
+        min-height: 1330px;
+    }
+
+    @media(min-width: 723px) {
+        min-height: 1365px;
+    }
+
+    @media(min-width: 751px) {
+        min-height: 1390px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        min-height: 1545px;
+        background-image: url(../../img/what-i-do/grey-md.jpg);
+    }
+
+    @media(min-width: 780px) {
+        min-height: 1557px;
+    }
+
+    @media(min-width: 795px) {
+        min-height: 1575px;
+    }
+
+    @media(min-width: 799px) {
+        min-height: 1597px;
+    }
+
+    @media(min-width: 810px) {
+        min-height: 1616px;
+    }
+
+    @media(min-width: 830px) {
+        min-height: 1636px;
+    }
+
+    @media(min-width: 854px) {
+        min-height: 1656px;
+    }
+
+    @media(min-width: 870px) {
+        min-height: 1680px;
+    }
+
+    @media(min-width: 900px) {
+        min-height: 1707px;
+    }
+
+    @media(min-width: 920px) {
+        min-height: 1737px;
+    }
+
+    @media (min-width: $bp-middle) {
+        min-height: 1778px;
+    }
+
+    @media(min-width: 977px) {
+        min-height: 1817px;
+    }
+
+    @media(min-width: 1010px) {
+        min-height: 1837px;
+    }
+
+    @media(min-width: 1035px) {
+        min-height: 1857px;
+    }
+
+    @media(min-width: 1060px) {
+        min-height: 1888px;
+    }
+
+    @media(min-width: 1091px) {
+        min-height: 1915px;
+    }
+
+    @media(min-width: 1115px) {
+        min-height: 1939px;
+    }
+
+    @media(min-width: 1140px) {
+        min-height: 1964px;
+    }
+
+    @media(min-width: 1168px) {
+        min-height: 1999px;
+    }
+
+    @media(min-width: 1189px) {
+        min-height: 2020px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        max-width: 1340px;
+        background-image: url(../../img/what-i-do/grey-lg.jpg);
+        background-size: 50% 870px;
+        background-position: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-repeat: no-repeat;
+        min-height: fit-content;
+    }
+}
+
+.what-i-do.decoration-line::after {
+    @media (min-width: $bp-desktop) {
+        left: 0;
+    }
+}
+
+.what-i-do__wrapper {
+    max-width: 350px;
+
+    @media(min-width: 450px) {
+        max-width: 385px;
+    }
+
+    @media(min-width: $bp-xs) {
+        max-width: 400px;
+    }
+
+    @media(min-width: 540px) {
+        max-width: 450px;
+    }
+
+    @media(min-width: 600px) {
+        max-width: 500px;
+    }
+
+    @media(min-width: 650px) {
+        max-width: 550px;
+    }
+
+    @media(min-width: 700px) {
+        max-width: 640px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        max-width: 670px;
+    }
+
+    @media (min-width: 800px) {
+        max-width: 700px;
+    }
+
+    @media (min-width: 850px) {
+        max-width: 750px;
+    }
+
+    @media (min-width: $bp-middle) {
+        max-width: 800px;
+    }
+
+    @media (min-width: 1000px) {
+        max-width: 845px;
+    }
+
+    @media (min-width: 1030px) {
+        max-width: 870px;
+    }
+
+    @media (min-width: 1100px) {
+        max-width: 970px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        grid-column: 2;
+        justify-self: center;
+        width: 530px;
+    }
+}
+
+.section-title {
+    margin-bottom: 40px;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 75px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+.what-i-do__heading {
+    color: $black;
+    font-family: "Gilroy-SemiBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+        content: attr(data-before);
+        font-family: "Gilroy-Light";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    @media (min-width: $bp-xs) {
+        font-size: 20px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+
+    @media (min-width: $bp-middle) {
+        font-size: 27px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+}
+
+.what-i-do__paragraph {
+    color: $black;
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $primary-black;
+
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $bp-xs) {
+        font-size: 15px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 17px;
+        line-height: 26px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $bp-middle) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        max-width: 759px;
+        font-size: 16px;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        line-height: 21px;
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+}

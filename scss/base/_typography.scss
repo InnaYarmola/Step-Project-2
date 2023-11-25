@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../../fonts/Gilroy-300.woff2");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../../fonts/Gilroy-800.woff2");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url("../../fonts/Gilroy-Bold.woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url("../../fonts/Gilroy-light.woff2");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url("../../fonts/Gilroy-Medium.woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url("../../fonts/gilroy-regular.woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url("../../fonts/gilroy-semi-bold.woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../../fonts/Inter-Regular.woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../../fonts/Inter-SemiBold.woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+
+.section-title {
+    color: $primary-black;
+    text-align: center;
+    font-family: "Gilroy";
+    font-size: 51px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @media(min-width: $bp-xs) {
+        font-size: 70px;
+        letter-spacing: 3.2px;
+    }
+    
+    @media (min-width: $bp-tablet) {
+        font-size: 75px;
+        letter-spacing: 6px;
+    }
+    
+    @media (min-width: $bp-middle) {
+        font-size: 95px;
+    }
+    
+    @media (min-width: $bp-desktop) {
+        font-size: 140px;
+    }
+}

@@ -1,0 +1,168 @@
+.my-clients {
+    padding-top: 30px;
+
+    @media (min-width: $bp-desktop) {
+        padding-top: 50px;
+        padding-bottom: 110px;
+    }
+}
+
+.section-title.my-clients__title {
+    margin-bottom: 30px;
+
+    @media (min-width: $bp-desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+.my-clients__grid-container {
+
+    @media (min-width: $bp-desktop) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 520px);
+    }
+}
+
+.my-clients__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid $primary-black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    @media (min-width: $bp-desktop) {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5) {
+            border-right: 1px solid $primary-black;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            border-bottom: 1px solid $primary-black;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5) {
+            border-bottom: none;
+        }
+    }
+}
+
+.my-clients__heading {
+    color: $secondary-black;
+    font-family: "Gilroy";
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 33px;
+
+    @media (min-width: $bp-xs) {
+        font-size: 28px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 30px;
+    }
+
+    @media (min-width: $bp-middle) {
+        font-size: 34px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 32px;
+    }
+}
+
+.my-clients__paragraph {
+    color: $black;
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 27px;
+
+    @media (min-width: $bp-xs) {
+        font-size: 16px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 19px;
+    }
+
+    @media (min-width: $bp-middle) {
+        font-size: 22px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 15px;
+    }
+}
+
+.my-clients__wrapper {
+    @include flex(row, flex-start, center, 20px);
+}
+
+.my-clients__span {
+    display: block;
+    color: $black;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 600;
+
+    @media (min-width: $bp-xs) {
+        font-size: 17px;
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 19px;
+    }
+
+    @media (min-width: $bp-middle) {
+        font-size: 22px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 16px;
+    }
+
+    &:last-child {
+        font-weight: 400;
+        font-size: 12px;
+
+        @media (min-width: $bp-xs) {
+            font-size: 16px;
+        }
+
+        @media (min-width: $bp-tablet) {
+            font-size: 18px;
+        }
+
+        @media (min-width: $bp-middle) {
+            font-size: 20px;
+        }
+
+        @media (min-width: $bp-desktop) {
+            font-size: 17px;
+        }
+    }
+}
+
+.my-clients__photo {
+    width: 70px;
+    height: 70px;
+}
+
+.my-clients__span-wrapper {
+    @include flex(column, center, unset, 10px);
+}

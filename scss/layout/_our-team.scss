@@ -1,0 +1,168 @@
+.our-team {
+    padding-top: 30px;
+
+    @media (min-width: $bp-desktop) {
+        padding-top: 50px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        padding-bottom: 50px;
+    }
+}
+
+.our-team__title {
+    margin-bottom: 30px;
+
+    @media (min-width: $bp-desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+.our-team__gallery {
+    @include flex(column, center, center, 30px);
+
+    @media (min-width: $bp-tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 40px;
+
+    }
+
+    @media (min-width: $bp-desktop) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.our-team__card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $secondary-black;
+    text-align: center;
+}
+
+.our-team__card-title {
+    font-family: "Gilroy";
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 33px;
+        margin-bottom: 8px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+}
+
+.our-team__card-subtitle {
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: block;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+}
+
+.our-team__photo {
+    width: 100%;
+    margin-bottom: 15px;
+
+
+    @media (min-width: $bp-tablet) {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        margin-bottom: 15px;
+    }
+}
+
+.our-team__social-media {
+    @include flex(row, center, center, 10px);
+
+    @media (min-width: $bp-desktop) {
+        justify-content: flex-end;
+    }
+}
+
+.our-team__join-team {
+    color: $secondary-black;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    max-width: 438px;
+    @include flex(column, center, center, 15px);
+
+
+    @media (min-width: $bp-tablet) {
+        grid-column: span 2;
+        max-width: 100%;
+        text-align: left;
+        align-items: start;
+        gap: 22px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        padding-bottom: 0;
+        gap: 15px;
+    }
+}
+
+.our-team__join-team-subtitle {
+    font-family: "Gilroy-Regular";
+    font-size: 30px;
+    display: block;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 34px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 30px;
+    }
+}
+
+.our-team__join-team-title {
+    font-family: "Gilroy-Bold";
+    font-size: 39px;
+    text-align: center;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 56px;
+        text-align: left;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 46px;
+    }
+
+
+}
+
+.btn-secondary.our-team__btn {
+    padding: 10px 90px 10px 70px;
+
+    &::after {
+        right: 56px;
+
+        @media (min-width: $bp-tablet) {
+            right: 22px;
+        }
+    }
+
+    @media (min-width: $bp-tablet) {
+        padding: 15px 60px 15px 40px;
+    }
+}

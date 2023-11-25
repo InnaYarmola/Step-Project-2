@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include flex(column, unset, center, 20px);
+
+    @media (min-width: $bp-tablet) {
+        @include flex(row, space-between, center);
+    }
+}
+
+.footer__paragraph {
+    color: $secondary-black;
+    font-family: "Gilroy-Regular";
+    font-size: 13px;
+    text-align: center;
+
+    span {
+        color: $secondary-black;
+        font-family: "Gilroy-SemiBold";
+    }
+
+    @media (min-width: $bp-tablet) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $bp-desktop) {
+        font-size: 22px;
+    }
+}
+
+.footer__wrapper-svg {
+    @include flex(row, center, center, 10px)
+}

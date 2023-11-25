@@ -1,0 +1,32 @@
+.btn-primary {
+    border-radius: 50px;
+    background: #FFF;
+    padding: 10px 20px;
+    @include flex(row, center, center);
+    color: $primary-black;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    width: fit-content;
+
+    @media (min-width: $bp-tablet) {
+        font-size: 20px;
+    }
+}
+
+.btn-secondary {
+    @extend .btn-primary;
+    background: $primary-black;
+    color: $white;
+    text-transform: capitalize;
+    position: relative;
+    padding: 15px 50px 15px 30px;
+
+    &::after {
+        content: url(../../img/svg/arrow-right.svg);
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+}
